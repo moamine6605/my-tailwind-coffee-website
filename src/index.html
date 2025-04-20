@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind - Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Optional: You can configure Tailwind further here if needed
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'coffee-bean': '#6F4E37', // A brownish color
+                'cream': '#FFFDD0',
+                'dark-roast': '#3C2F2F',
+              },
+              fontFamily: {
+                 sans: ['Inter', 'sans-serif'], // Example: using a nice sans-serif font
+              },
+              height: {
+                'screen-75': '75vh', // Custom height
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+       <style>
+        /* Simple smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* You can add custom CSS here if absolutely necessary */
+       </style>
+</head>
+<body class="bg-cream text-dark-roast font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-coffee-bean">The Daily Grind</a>
+            <div class="space-x-6">
+                <a href="#home" class="text-dark-roast hover:text-coffee-bean transition duration-300 ease-in-out">Home</a>
+                <a href="#menu" class="text-dark-roast hover:text-coffee-bean transition duration-300 ease-in-out">Menu</a>
+                <a href="#about" class="text-dark-roast hover:text-coffee-bean transition duration-300 ease-in-out">About</a>
+                <a href="#contact" class="text-dark-roast hover:text-coffee-bean transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="h-screen-75 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29mZmVlJTIwc2hvcHx8fHx8fDE3MTE3NTI5MDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-6 h-full flex flex-col justify-center items-center text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Perfect Brews, Every Time</h1>
+            <p class="text-xl text-gray-200 mb-8">Experience the finest coffee crafted with passion.</p>
+            <a href="#menu"
+               class="bg-coffee-bean text-white px-8 py-3 rounded-full font-semibold
+                      hover:bg-dark-roast hover:scale-105 transform transition duration-300 ease-in-out shadow-lg">
+                Explore Our Menu
+            </a>
+        </div>
+    </section>
+
+    <section id="menu" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-dark-roast mb-12">Our Signature Coffees</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2FwcHVjY2lub3x8fHx8fDE3MTE3NTMxMDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Cappuccino" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-coffee-bean">Classic Cappuccino</h3>
+                        <p class="text-gray-700 text-base mb-4">
+                            Rich espresso topped with steamed milk foam. A timeless favorite.
+                        </p>
+                        <span class="font-semibold text-lg text-dark-roast">$4.50</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <img src="https://images.unsplash.com/photo-1557772611-722dabe20 NDU?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bGF0dGV8fHx8fHwxNzExNzUzMTMy&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Latte" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-coffee-bean">Silky Smooth Latte</h3>
+                        <p class="text-gray-700 text-base mb-4">
+                            Creamy steamed milk blended with a shot of our finest espresso.
+                        </p>
+                        <span class="font-semibold text-lg text-dark-roast">$5.00</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out">
+                    <img src="https://images.unsplash.com/photo-1545665225-b23b99e4d_0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZXNwcmVzc298fHx8fHwxNzExNzUzMTU4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="Espresso" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-coffee-bean">Bold Espresso Shot</h3>
+                        <p class="text-gray-700 text-base mb-4">
+                            A concentrated shot of pure coffee flavor to kickstart your day.
+                        </p>
+                        <span class="font-semibold text-lg text-dark-roast">$3.00</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+         <div class="container mx-auto px-6 text-center max-w-3xl">
+             <h2 class="text-3xl font-bold text-dark-roast mb-6">Our Story</h2>
+             <p class="text-gray-700 leading-relaxed">
+                 Founded in 2024, The Daily Grind started with a simple mission: to serve the best possible coffee in a welcoming atmosphere. We source our beans ethically and roast them locally to ensure freshness and quality in every cup. Come visit us and taste the difference!
+             </p>
+         </div>
+     </section>
+
+    <footer id="contact" class="bg-dark-roast text-cream py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 The Daily Grind. All Rights Reserved.</p>
+            <p class="mt-2">123 Coffee Lane, Brewville, CA 90210</p>
+            <div class="mt-4 space-x-4">
+                 <a href="#" class="hover:text-white transition duration-300">Facebook</a>
+                 <a href="#" class="hover:text-white transition duration-300">Instagram</a>
+                 <a href="#" class="hover:text-white transition duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
